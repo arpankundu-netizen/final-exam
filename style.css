@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "BodoniFLF";
+  src: url("fonts/bodoniflf/BodoniFLF-Roman.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "DM-sans";
+  src: url("fonts/dm-sans/DMSans-Regular.ttf") format("truetype");
+}
+
+.container {
+  max-width: 1710px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col-60 {
+  max-width: 60%;
+  flex: 0 0 60%;
+  padding: 0 15px;
+}
+
+.col-40 {
+  max-width: 40%;
+  flex: 0 0 40%;
+  padding: 0 15px;
+}
+.category-box {
+  max-width: calc(100% / 7);
+  flex:  0 0 calc(100% / 7);
+  padding: 0 15px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-family: "BodoniFLF";
+  font-size: 48px;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "BodoniFLF";
+  font-size: 42px;
+  font-weight: 400;
+}
+
+/* ========= Topbar */
+
+.topbar {
+  background: #644135;
+  padding: 10px 0;
+}
+
+.topbar-content {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "DM-sans";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.topbar-content p a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* ========= Navbar ========== */
+
+.navbar {
+  background-color: #eae9e4;
+  padding: 5px 0;
+}
+
+.navbar .nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  max-width: 50px;
+  height: auto;
+}
+
+.navbar-links .navlinks {
+  display: flex;
+}
+
+.navlinks li {
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+.navlinks li a {
+  color: #000000;
+  font-family: "DM-sans";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: opacity 0.2s ease;
+}
+
+.navlinks li a:hover {
+  opacity: 0.6;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  text-decoration: none;
+  margin-right: 12px;
+  transition: opacity 0.2s ease;
+}
+
+.nav-right a:hover {
+  opacity: 0.6;
+}
+
+/* =========== banner section ======= */
+
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 800px;
+  margin: 0 auto;
+  background: url("images/banner.png") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.banner-content p {
+  font-family: "DM-sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.banner-content h1 {
+  color: #ffffff;
+  text-transform: uppercase;
+  max-width: 600px;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  margin: 0 auto 35px auto;
+}
+
+.banner-btn {
+  display: inline-block;
+  background-color: #eae9e4;
+  color: #000000;
+  font-family: "DM-sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 14px 35px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.banner-btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* ========== About srction ========== */
+
+.about-section {
+  padding-top: 100px;
+  background-color: #eae9e4;
+}
+
+.about-img-box {
+  width: 100%;
+  margin: 0 0 45px 0;
+  overflow: hidden;
+}
+
+.about-img-box img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.about-img-box:hover img {
+  transform: scale(1.05);
+}
+
+.about-desc {
+  font-family: "DM-sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #000000;
+  margin-bottom: 35px;
+}
+
+.about-btn {
+  display: inline-block;
+  background-color: #644135;
+  color: #ffffff;
+  font-family: "DM-sans", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 15px 35px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.about-btn:hover {
+  background-color: #4a2f26;
+}
+
+/* ========= Right Side Content  ========= */
+.about-right-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+}
+
+.about-sub {
+  font-family: "DM-sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  letter-spacing: 2.5px;
+  margin-bottom: 25px;
+}
+
+.about-title {
+  font-family: "BodoniFLF";
+  font-size: 42px;
+  font-weight: 400;
+  color: #644135;
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+  margin-bottom: 45px;
+  text-transform: uppercase;
+}
+
+.about-large-img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.about-large-img img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.about-large-img:hover img {
+  transform: scale(1.05);
+}
+
+/* ========== categories section ========= */
+
+.categories-section {
+  background-color: #eae9e4;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section-sub {
+  display: block;
+  font-family: "DM-sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e1e1e;
+  letter-spacing: 2.5px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.section-title {
+  color: #644135;
+  letter-spacing: 1.5px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.category-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+.category-icon-box {
+  width: 100%;
+  background-color: #644135;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 15px 0;
+  padding: 30px;
+}
+
+.category-icon-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.category-name {
+  font-family: "BodoniFLF", serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #1e1e1e;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
